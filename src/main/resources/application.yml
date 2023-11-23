@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+  datasource:
+    password: 123456789
+    username: root
+    url: jdbc:mysql://localhost:3306/testing
+  redis:
+    port: 6379
+    host: 'localhost'
